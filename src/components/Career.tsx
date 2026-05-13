@@ -15,43 +15,37 @@ const Career = () => {
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Position In Company</h4>
-                <h5>Company Name</h5>
+                <h4>Motion Designer</h4>
+                <h5>Freelance / Academic Projects</h5>
               </div>
-              <h3>20XX</h3>
+              <h3>6+ Months</h3>
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-              labore sit non ipsum temporibus quidem, deserunt eaque officiis
-              mollitia ratione suscipit repellat.
+              Produced motion graphics and explainer videos for project demos, college events, and client briefs. Proficient in Canva for rapid brand design, poster creation, and presentation decks.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Position In Company</h4>
-                <h5>Company Name</h5>
+                <h4>Full Stack Developer</h4>
+                <h5>Project-Based</h5>
               </div>
-              <h3>20XX</h3>
+              <h3>2026</h3>
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-              labore sit non ipsum temporibus quidem, deserunt eaque officiis
-              mollitia ratione suscipit repellat.
+              Developed and deployed 5+ end-to-end software projects spanning mobile apps, AI tools, and web interfaces. Managed full development lifecycle: ideation → design → development → testing → presentation.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Position In Company</h4>
-                <h5>Company Name</h5>
+                <h4>Excel Accounting & Bill Quotations</h4>
+                <h5>Assisted Family Business</h5>
               </div>
               <h3>NOW</h3>
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-              labore sit non ipsum temporibus quidem, deserunt eaque officiis
-              mollitia ratione suscipit repellat.
+              Maintained accounts, generated bill quotations, and tracked income/expenses using advanced Excel functions. Streamlined invoicing workflow, reducing turnaround time for client billing.
             </p>
           </div>
         </div>

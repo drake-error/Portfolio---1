@@ -1,74 +1,98 @@
+import { useState } from "react";
 import "./styles/Work.css";
 import WorkImage from "./WorkImage";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useGSAP } from "@gsap/react";
 
-gsap.registerPlugin(useGSAP);
+const projects = [
+  {
+    name: "JeevanCare",
+    category: "AI • IoT • Hardware",
+    tools: "Healthcare & Emergency Response",
+    desc: "AI-integrated system for real-time vitals monitoring and emergency alerts.",
+    image: "/images/project_jeevancare_1778607545653.png"
+  },
+  {
+    name: "Nyaya Mitra",
+    category: "NLP • EdTech • Python",
+    tools: "AI Education Tool",
+    desc: "AI-driven legal education assistant answering 200+ complex queries.",
+    image: "/images/project_nyayamitra_1778607562228.png"
+  },
+  {
+    name: "Data Cleaning Tool",
+    category: "Python • Pandas",
+    tools: "Automated Data Pipeline",
+    desc: "Detects nulls, duplicates, and format inconsistencies.",
+    image: "/images/project_dataclean_1778607617684.png"
+  },
+  {
+    name: "Chemical Waste Detection",
+    category: "Hardware • Embedded C",
+    tools: "Sensor-based Alert System",
+    desc: "Detects chemical waste in industrial water sources.",
+    image: "/images/project_chemicalwaste_1778607636584.png"
+  }
+];
 
 const Work = () => {
-  useGSAP(() => {
-  let translateX: number = 0;
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-  function setTranslateX() {
-    const box = document.getElementsByClassName("work-box");
-    const rectLeft = document
-      .querySelector(".work-container")!
-      .getBoundingClientRect().left;
-    const rect = box[0].getBoundingClientRect();
-    const parentWidth = box[0].parentElement!.getBoundingClientRect().width;
-    let padding: number =
-      parseInt(window.getComputedStyle(box[0]).padding) / 2;
-    translateX = rect.width * box.length - (rectLeft + parentWidth) + padding;
-  }
-
-  setTranslateX();
-
-  let timeline = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".work-section",
-      start: "top top",
-      end: `+=${translateX}`, // Use actual scroll width
-      scrub: true,
-      pin: true,
-      id: "work",
-    },
-  });
-
-  timeline.to(".work-flex", {
-    x: -translateX,
-    ease: "none",
-  });
-
-  // Clean up (optional, good practice)
-  return () => {
-    timeline.kill();
-    ScrollTrigger.getById("work")?.kill();
+  const handleNext = () => {
+    setCurrentIndex((prev) => (prev === projects.length - 1 ? 0 : prev + 1));
   };
-}, []);
+
+  const handlePrev = () => {
+    setCurrentIndex((prev) => (prev === 0 ? projects.length - 1 : prev - 1));
+  };
+
   return (
     <div className="work-section" id="work">
       <div className="work-container section-container">
         <h2>
           My <span>Work</span>
         </h2>
-        <div className="work-flex">
-          {[...Array(6)].map((_value, index) => (
-            <div className="work-box" key={index}>
-              <div className="work-info">
-                <div className="work-title">
-                  <h3>0{index + 1}</h3>
+        
+        {/* Navigation Arrows */}
+        <button className="carousel-btn prev-btn" onClick={handlePrev}>&#8249;</button>
+        <button className="carousel-btn next-btn" onClick={handleNext}>&#8250;</button>
 
-                  <div>
-                    <h4>Project Name</h4>
-                    <p>Category</p>
+        <div className="carousel-window" style={{ overflow: "hidden", width: "100%" }}>
+          <div 
+            className="work-flex" 
+            style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+          >
+            {projects.map((project, index) => (
+              <div className="work-box" key={index}>
+                <div className="work-info" style={{ flex: 1 }}>
+                  <div className="work-title" style={{ justifyContent: "flex-start", gap: "30px", alignItems: "center" }}>
+                    <h3 style={{ fontSize: "100px", color: "var(--accentColor)", margin: 0, lineHeight: 1 }}>0{index + 1}</h3>
+
+                    <div style={{ textAlign: "left" }}>
+                      <h4 style={{ fontSize: "35px", margin: 0 }}>{project.name}</h4>
+                      <p style={{ fontSize: "18px", marginTop: "10px" }}>{project.category}</p>
+                    </div>
+                  </div>
+                  <div style={{ marginTop: "40px" }}>
+                    <h4 style={{ textTransform: "uppercase", letterSpacing: "2px", color: "#adacac" }}>TOOLS & FEATURES</h4>
+                    <p style={{ fontSize: "20px", color: "#fff", marginTop: "10px" }}>{project.tools}</p>
+                    <p style={{ marginTop: "20px", maxWidth: "80%", fontSize: "16px", color: "#adacac" }}>{project.desc}</p>
                   </div>
                 </div>
-                <h4>Tools and features</h4>
-                <p>Javascript, TypeScript, React, Threejs</p>
+                <div style={{ flex: 1, display: "flex", justifyContent: "flex-end" }}>
+                  <WorkImage image={project.image} alt={project.name} />
+                </div>
               </div>
-              <WorkImage image="/images/placeholder.webp" alt="" />
-            </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Pagination Dots */}
+        <div className="carousel-pagination">
+          {projects.map((_, idx) => (
+            <span 
+              key={idx} 
+              className={`dot ${idx === currentIndex ? 'active' : ''}`}
+              onClick={() => setCurrentIndex(idx)}
+            ></span>
           ))}
         </div>
       </div>

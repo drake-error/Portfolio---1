@@ -9,21 +9,23 @@
   width: var(--cWidth);
   max-width: 1920px;
   margin: auto;
-  z-index: 9;
+  margin-top: 100px;
+  z-index: 5;
 }
 .what-box {
   width: 50%;
   display: flex;
   justify-content: center;
   position: relative;
-  z-index: 9;
+  z-index: 5;
 }
 .what-box h2 {
   font-size: calc(4vw + 25px);
   line-height: calc(4vw + 20px);
   font-weight: 600;
   margin-right: 10%;
-  margin-bottom: 100px;
+  margin-top: 150px;
+  transform: translateX(-10vw);
 }
 
 .hat-h2 {
@@ -41,8 +43,8 @@
 }
 .what-content {
   width: 450px;
-  height: 33%;
-  min-height: 50%;
+  height: 33.333%;
+  min-height: 33.333%;
   transition: 0.5s;
   /* border: 0.5px dashed rgba(255, 255, 255, 0.3); */
   position: relative;
@@ -52,14 +54,14 @@
 
 .what-noTouch:hover,
 .what-content-active {
-  min-height: 67%;
+  min-height: 50%;
   padding: 40px 50px;
 }
 
 .what-noTouch:hover ~ .what-content,
 .what-box-in:hover .what-noTouch:not(:hover),
 .what-content.what-sibling {
-  min-height: 33%;
+  min-height: 25%;
   padding: 10px 50px;
 }
 .what-content h3 {

@@ -8,6 +8,7 @@
   height: auto;
   width: var(--cWidth);
   margin: auto;
+  z-index: 15;
 }
 .about-me {
   padding: 50px 0px;
@@ -24,9 +25,9 @@
 }
 
 .about-me p {
-  font-size: 33px;
+  font-size: 24px;
   font-weight: 600;
-  line-height: 36px;
+  line-height: 30px;
   letter-spacing: 1px;
 }
 
@@ -59,8 +60,8 @@
     width: 50%;
   }
   .about-me p {
-    font-size: 1.9vw;
-    line-height: 2.3vw;
+    font-size: 1.5vw;
+    line-height: 1.8vw;
   }
 }
 @media only screen and (min-width: 1950px) {
