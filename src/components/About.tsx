@@ -6,7 +6,7 @@ const About = () => {
       <div className="about-me">
         <h3 className="title">About Me</h3>
         <p className="para">
-          Motivated 1st-year EEE engineering student and Hackathon Winner with 6+ months of hands-on project experience spanning AI-powered applications, hardware systems, and creative design. Proven ability to ideate, build, and ship solutions across healthcare, legal-tech, fintech, and data domains. Combines technical depth in Java & C with strong visual communication skills to deliver impactful, user-centric products.
+          Motivated 1st-year EEE engineering student and <strong>NATIONAL LEVEL HACKATHON WINNER</strong> with 6+ months of hands-on project experience spanning AI-powered applications, hardware systems, and creative design. Proven ability to ideate, build, and ship solutions across healthcare, legal-tech, fintech, and data domains. Combines technical depth in Java & C with strong visual communication skills to deliver impactful, user-centric products.
         </p>
         <h3 className="title" style={{ marginTop: '2rem' }}>Education</h3>
         <p className="para">

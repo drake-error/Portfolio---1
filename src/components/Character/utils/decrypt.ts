@@ -14,7 +14,15 @@ export const decryptFile = async (
   url: string,
   password: string
 ): Promise<ArrayBuffer> => {
+  if (!window.isSecureContext || !crypto.subtle) {
+    throw new Error(
+      "Decryption failed: Secure context (HTTPS) is required for Web Crypto API. Please access the site via HTTPS."
+    );
+  }
   const response = await fetch(url);
+  if (!response.ok) {
+    throw new Error(`Failed to fetch encrypted file: ${response.statusText}`);
+  }
   const encryptedData = await response.arrayBuffer();
   const iv = new Uint8Array(encryptedData.slice(0, 16));
   const data = encryptedData.slice(16);

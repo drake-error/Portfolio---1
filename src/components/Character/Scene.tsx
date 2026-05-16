@@ -73,6 +73,10 @@ const Scene = () => {
             handleResize(renderer, camera, canvasDiv, character)
           );
         }
+      }).catch((error) => {
+        console.error("Failed to load character scene:", error);
+        // Optionally trigger the progress bar to finish or show an error
+        setLoading(100); 
       });
 
       let mouse = { x: 0, y: 0 },
@@ -98,9 +102,7 @@ const Scene = () => {
         });
       };
 
-      document.addEventListener("mousemove", (event) => {
-        onMouseMove(event);
-      });
+      document.addEventListener("mousemove", onMouseMove);
       const landingDiv = document.getElementById("landingDiv");
       if (landingDiv) {
         landingDiv.addEventListener("touchstart", onTouchStart);

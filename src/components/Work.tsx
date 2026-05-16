@@ -6,8 +6,8 @@ const projects = [
   {
     name: "JeevanCare",
     category: "AI • IoT • Hardware",
-    tools: "Healthcare & Emergency Response",
-    desc: "AI-integrated system for real-time vitals monitoring and emergency alerts.",
+    tools: "NATIONAL LEVEL WINNING PROJECT",
+    desc: "AI-integrated system for real-time vitals monitoring and emergency alerts. FOUNDER - DARWIN PK",
     image: "/images/project_jeevancare_1778607545653.png"
   },
   {
@@ -74,7 +74,15 @@ const Work = () => {
                   <div style={{ marginTop: "40px" }}>
                     <h4 style={{ textTransform: "uppercase", letterSpacing: "2px", color: "#adacac" }}>TOOLS & FEATURES</h4>
                     <p style={{ fontSize: "20px", color: "#fff", marginTop: "10px" }}>{project.tools}</p>
-                    <p style={{ marginTop: "20px", maxWidth: "80%", fontSize: "16px", color: "#adacac" }}>{project.desc}</p>
+                    <p style={{ marginTop: "20px", maxWidth: "80%", fontSize: "16px", color: "#adacac" }}>
+                      {project.desc.includes("DARWIN PK") ? (
+                        <>
+                          {project.desc.split("DARWIN PK")[0]}
+                          <strong style={{ color: "#fff", fontWeight: 900, fontSize: "18px" }}>DARWIN PK</strong>
+                          {project.desc.split("DARWIN PK")[1]}
+                        </>
+                      ) : project.desc}
+                    </p>
                   </div>
                 </div>
                 <div style={{ flex: 1, display: "flex", justifyContent: "flex-end" }}>
