@@ -7,7 +7,7 @@ const projects = [
     name: "JeevanCare",
     category: "AI • IoT • Hardware",
     tools: "NATIONAL LEVEL WINNING PROJECT",
-    desc: "AI-integrated system for real-time vitals monitoring and emergency alerts. FOUNDER - DARWIN PK",
+    desc: "AI-integrated system for real-time vitals monitoring and emergency alerts. FOUNDER OF JEEVANCARE - DARWIN PK",
     image: "/images/project_jeevancare_1778607545653.png"
   },
   {
