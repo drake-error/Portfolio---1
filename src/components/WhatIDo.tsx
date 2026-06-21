@@ -125,10 +125,10 @@ const WhatIDo = () => {
             </div>
             <div className="what-corner"></div>
             <div className="what-content-in">
-              <h3>MOTION DESIGN</h3>
+              <h3>MOTION DESIGN & APP DEV</h3>
               <h4>Description</h4>
               <p>
-                Producing engaging motion graphics and visual communications for brands.
+                Producing engaging motion graphics. As an App Developer, I've built impactful solutions like ZIVI, an AI-powered medical healthcare app, and Jeevancare.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
