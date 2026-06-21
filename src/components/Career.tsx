@@ -42,7 +42,7 @@ const Career = () => {
                 <h4>Hardware Circuiting and BMS</h4>
                 <h5>EEE Student & Hardware Developer</h5>
               </div>
-              <h3>2024</h3>
+              <h3>2025</h3>
             </div>
             <p>
               Hands-on Electrical and Electronics Engineering student with a strong foundation in circuit design, Arduino prototyping, and sensor integration (MQ-135, LM358). Proven track record of building real-world IoT systems and competing at national-level events like IIT Bombay Techfest. Driven to bridge the gap between robust embedded hardware and intelligent software solutions.
