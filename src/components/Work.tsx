@@ -36,7 +36,7 @@ const projects = [
     category: "IoT • Embedded Systems",
     tools: "CURRENTLY WORKING ON THIS PROJECT",
     desc: "Intelligent system using Arduino and RF wireless communication. Integrates an MQ-3 alcohol sensor and IR sensors as a real-time safety gatekeeper—preventing vehicle ignition if the rider is impaired, drowsy, or unhelmeted.",
-    image: "/images/placeholder.webp"
+    image: "/images/smart_helmet_project_1782039586966.png"
   }
 ];
 
