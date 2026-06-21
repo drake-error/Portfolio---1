@@ -30,6 +30,13 @@ const projects = [
     tools: "Sensor-based Alert System",
     desc: "Detects chemical waste in industrial water sources.",
     image: "/images/project_chemicalwaste_1778607636584.png"
+  },
+  {
+    name: "Smart Helmet Using Arduino",
+    category: "IoT • Embedded Systems",
+    tools: "CURRENTLY WORKING ON THIS PROJECT",
+    desc: "Intelligent system using Arduino and RF wireless communication. Integrates an MQ-3 alcohol sensor and IR sensors as a real-time safety gatekeeper—preventing vehicle ignition if the rider is impaired, drowsy, or unhelmeted.",
+    image: "/images/placeholder.webp"
   }
 ];
 
