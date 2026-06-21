@@ -90,7 +90,7 @@ const WhatIDo = () => {
               <h3>WEB DEVELOPMENT</h3>
               <h4>Description</h4>
               <p>
-                Building modern web applications from frontend interfaces to robust backend systems.
+                The art of turning a blank digital canvas or a raw line of code into a living, breathing ecosystem that millions of people can touch, interact with, and rely on every single day.It’s where logic meets pure creativity. As a developer, you aren't just writing scripts; you are building bridges, shaping experiences, and solving tangible human problems
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
@@ -160,10 +160,10 @@ const WhatIDo = () => {
             </div>
             <div className="what-corner"></div>
             <div className="what-content-in">
-              <h3>MOBILE APP DEVELOPMENT</h3>
+              <h3>CREATIVE HARDWARE ENGINEER</h3>
               <h4>Description</h4>
               <p>
-                Creating robust Android apps with AI and computer vision.
+                Creative hardware engineering is the practice of designing, prototyping, and deploying innovative physical systems to solve complex real-world challenges. This discipline bridges the gap between electrical engineering, embedded systems design, and industrial form factor innovation.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
