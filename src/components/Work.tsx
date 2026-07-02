@@ -71,11 +71,11 @@ const Work = () => {
               <div className="work-box" key={index}>
                 <div className="work-info" style={{ flex: 1 }}>
                   <div className="work-title" style={{ justifyContent: "flex-start", gap: "30px", alignItems: "center" }}>
-                    <h3 style={{ fontSize: "100px", color: "var(--accentColor)", margin: 0, lineHeight: 1 }}>0{index + 1}</h3>
+                    <h3 className="project-number" style={{ color: "var(--accentColor)", margin: 0, lineHeight: 1 }}>0{index + 1}</h3>
 
                     <div style={{ textAlign: "left" }}>
-                      <h4 style={{ fontSize: "35px", margin: 0 }}>{project.name}</h4>
-                      <p style={{ fontSize: "18px", marginTop: "10px" }}>{project.category}</p>
+                      <h4 className="project-name" style={{ margin: 0 }}>{project.name}</h4>
+                      <p className="project-category" style={{ marginTop: "10px" }}>{project.category}</p>
                     </div>
                   </div>
                   <div style={{ marginTop: "40px" }}>
