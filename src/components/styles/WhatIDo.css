@@ -323,6 +323,7 @@
     margin: 50px 0;
     font-size: 55px;
     line-height: 53px;
+    transform: none;
   }
   .what-box:first-child {
     justify-content: left;
@@ -387,6 +388,7 @@
     font-size: 38px;
     line-height: 40px;
     margin: 30px 0;
+    transform: none;
   }
   .what-content h3 {
     font-size: 20px;

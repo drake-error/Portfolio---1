@@ -243,13 +243,7 @@
     max-height: 200px;
   }
   .work-image, .work-image-in {
-    width: 100%;
-    justify-content: center;
-    display: flex;
-  }
-  .work-image-in {
-    min-height: 200px;
-    align-items: center;
+    display: none !important;
   }
   .carousel-btn {
     width: 40px;
