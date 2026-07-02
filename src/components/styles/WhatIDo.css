@@ -327,9 +327,6 @@
   .what-box:first-child {
     justify-content: left;
   }
-  .what-box:last-child {
-    height: 500px;
-  }
   .what-box {
     width: 500px;
     max-width: calc(100% - 50px);
@@ -340,7 +337,7 @@
   }
   .what-box-in {
     margin-left: 0px;
-    height: 700px;
+    height: auto;
   }
   .what-content h5,
   .what-content-flex {

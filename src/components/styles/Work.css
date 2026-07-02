@@ -207,12 +207,12 @@
 
 @media only screen and (max-width: 900px) {
   .work-box {
-    flex-direction: column-reverse !important;
+    flex-direction: column !important;
     padding: 30px;
     gap: 30px;
   }
   .work-flex .work-box:nth-child(even) {
-    flex-direction: column-reverse !important;
+    flex-direction: column !important;
   }
   .work-title h3 {
     font-size: 28px;
@@ -241,6 +241,15 @@
   }
   .work-image img {
     max-height: 200px;
+  }
+  .work-image, .work-image-in {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+  }
+  .work-image-in {
+    min-height: 200px;
+    align-items: center;
   }
   .carousel-btn {
     width: 40px;
